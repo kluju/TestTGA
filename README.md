@@ -1,34 +1,34 @@
-# PruebaDataQuFinal
-Configuracion Backend
-
-crear BD mySql arriendo_de_autos
-
-entrar a la carpeta backend
-
-Editar el archivo .env para cambiar la configuracion de la BD
-	# Database
-	DB_HOST=127.0.0.1
-	DB_PORT=3306
-	DB_DATABASE=arriendo_de_autos
-	DB_USERNAME=root
-	DB_PASSWORD=
-
- 
-luego ejecutar composer install
-
-luego ejecutar : "php artisan migrate" para las migraciones 
-
-luego ejecutar Semillas :
-	php artisan db:seed --class=ClienteSeeder
-	php artisan db:seed --class=EmpresaSeeder
-	php artisan db:seed --class=ArriendoSeeder
-
-y para finalizar ejecutar el servidor "php artisan serve --host=127.0.0.2 --port=8080"
+# Prueba  TGA
 
 
-Configuracion FrontEnd
+> **¡IMPORTANTE!**
+>Se debe tener npm, composer  y node
 
-entrar a la carpeta frontend
-ditar el archivo .env para cambiar la configuracion de la urls de la API
+## Configurar BACKEND
+>
 
-por consola ejecutar npm install y luego npm start
+## Puntos a realizar
+* crear BD mySql `encuestas`.
+* entrar a la carpeta  `backend`.
+* Editar el archivo `.env` y para cambiar la configuracion de la BD
+	 Implementación .
+	 		# Database
+			DB_HOST=127.0.0.1
+			DB_PORT=3306
+			DB_DATABASE=encuestas
+			DB_USERNAME=root
+			DB_PASSWORD=
+* luego ejecutar `composer install`.
+* luego ejecutar : `php artisan migrate` para las migraciones.
+* luego ejecutar Semillas :  `php artisan db:seed --class=PreguntaSeeder` `php artisan db:seed --class=AlternativaSeeder`.
+* y para finalizar ejecutar el servidor  `php artisan serve --host=127.0.0.2 --port=8080` asi lo hago de forma local
+
+## Recomendaciones
+* tener instalado composer .
+
+## Configurar FRONTEND
+
+## Puntos a realizar
+* entrar a la carpeta  `frontend` desde la raiz de proyecto.
+* ditar el archivo  `.env` para cambiar la configuracion de las urls de la `API`.
+* luego ejecutar : `npm install` y `npm start`.
