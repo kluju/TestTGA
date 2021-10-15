@@ -18,7 +18,7 @@
 			DB_DATABASE=encuestas
 			DB_USERNAME=root
 			DB_PASSWORD=
-* luego ejecutar `composer install`.
+* luego ejecutar `composer install` en la consola dentro de `backend`.
 * luego ejecutar : `php artisan migrate` para las migraciones.
 * luego ejecutar Semillas :  `php artisan db:seed --class=PreguntaSeeder` `php artisan db:seed --class=AlternativaSeeder`.
 * y para finalizar ejecutar el servidor  `php artisan serve --host=127.0.0.2 --port=8080` asi lo hago de forma local
@@ -31,4 +31,4 @@
 ## Puntos a realizar
 * entrar a la carpeta  `frontend` desde la raiz de proyecto.
 * ditar el archivo  `.env` para cambiar la configuracion de las urls de la `API`.
-* luego ejecutar : `npm install` y `npm start`.
+* luego ejecutar : `npm install` y `npm start` en la consola dentro de `frontend`.
